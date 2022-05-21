@@ -1,7 +1,8 @@
 # Проект: Велосипеды
 
 Дорожный клуб
-https://github.com/AndreyLap80/Bicycles.git
+https://andreylap80.github.io/Bicycles/
+
 Технологии и функциональность:
 SCSS/SASS
 Flexbox
