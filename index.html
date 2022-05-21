@@ -9,7 +9,137 @@
 </head>
 
 <body class="page">
+  <header class="header">
+    <nav class="header__menu">
+      <a href="#Покрытия_и_градиенты" class="menu__link">Покрытия и градиенты</a>
+      <a href="#Велосипеды" class="menu__link">Велосипеды</a>
+      <a href="#Тренировки" class="menu__link">Тренировки</a>
+    </nav>
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
+  <nav class="menu-btn__links">
+    <li><a href="#Покрытия_и_градиенты" class="menu-btn__link">Покрытия и градиенты</a></li>
+    <li><a href="#Велосипеды" class="menu-btn__link">Велосипеды</a></li>
+    <li><a href="#Тренировки" class="menu-btn__link">Тренировки</a></li>
+    <div class="checkbox-theme checkbox-theme_header">
+      <img src="./images/light.svg" alt="светлая" class="light-theme">
+      <label class="switch-footer">
+        <input class="input-footer" type="checkbox">
+        <span class="slider-footer"></span>
+      </label>
+      <img src="./images/dark.svg" alt="тёмная" class="dark-theme">
+    </div>
+  </nav>
+
+  <main class="content">
+    <section class="description">
+      <h1 class="title title_description">Шоссе, ТТ
+        и&nbsp;Грэвел</h1>
+      <p class="subtitle subtitle_description">Триатлонные старты, горные серпантины или грейвел заезды
+        по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться
+        в&nbsp;путь.</p>
+      <button class="button-description">Подробнее</button>
+      <p class="bike-name">Cannondale Systemsix</p>
+      <div class="border-bike"></div>
+      <img class="placeholder" src="./images/Placeholder.jpg" alt="дорога в лесу">
+      <img class="bike-illustration" src="./images/Placeholder_byke.png" alt="Cannondale Systemsix">
+    </section>
+    <div class="border"></div>
+    <section class="eddy-merckx">
+
+      <img class="eddy-merckx__illustration" src="./images/Norway.jpg" alt="Норвегия">
+      <h2 class="text">&laquo;Катайся много или мало, долго или коротко, как хочешь&nbsp;- но&nbsp;катайся&raquo;
+      </h2>
+      <ul class="name-profession">
+        <li class="name">Эдди Меркс</li>
+        <li class="profession">Велогонщик</li>
+      </ul>
+    </section>
+    <div class="border"></div>
+    <section class="pavement" id="Покрытия_и_градиенты">
+      <div class="pavement__highway">
+        <h2 class="title title_pavement">Шоссе</h2>
+        <p class="subtitle subtitle_pavement">На&nbsp;шоссейном велосипеде можно ездить по асфальту на&nbsp;разных
+          градиентах:
+          будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно
+          и&nbsp;самостоятельно.</p>
+        <div class="vector">
+          <img src="./images/vector-highway.svg" alt="шоссе" class="vector-highway">
+        </div>
+        <img class="illustration-highway" src="./images/highway.jpg" alt="шоссе">
+        <img class="illustration-gravel" src="./images/gravel.jpg" alt="грэвел">
+        <div class="switch-pavement">
+          <button class="switch-left">&#10094;</button>
+          <button class="switch-right">&#10095;</button>
+        </div>
+      </div>
+      <div class="border"></div>
+      <section class="bicyc" id="Велосипеды">
+        <h2 class="title title_bicyc">Велосипеды</h2>
+        <div class="pavement__links">
+          <a href="#" class="pavement__link">Шоссе</a>
+          <a href="#" class="pavement__link">Грэвел</a>
+          <a href="#" class="pavement__link">ТТ</a>
+        </div>
+        <select class="links-list" name="" id="">
+          <option value="Highway">Шоссе</option>
+          <option value="Gravel">Грэвел</option>
+          <option value="TT">ТТ</option>
+        </select>
+        <div class="scroll-conteiner">
+          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN" id="page-1"
+            target="_blank" class="bicyc__link"><img class="bicyc__illustration-highway"
+              src="./images/Cervelo_Caledonia-5.jpg" alt="Cervelo Caledonia-5">Cervelo Caledonia-5</a>
+          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+            id="page-2" target="_blank" class="bicyc__link"><img class="bicyc__illustration-highway"
+              src="./images/Cannondale_Systemsix_Himod.jpg" alt="Cannondale Systemsix Himod">Cannondale Systemsix
+            Himod</a>
+          <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+            id="page-3" target="_blank" class="bicyc__link"><img class="bicyc__illustration-highway"
+              src="./images/Trek_Domane_SL-7.jpg" alt="Trek Domane SL-7">Trek Domane SL-7</a>
+        </div>
+      </section>
+      <nav class="scroll">
+        <a href="#page-1">&bull;</a>
+        <a href="#page-2">&bull;</a>
+        <a href="#page-3">&bull;</a>
+      </nav>
+    </section>
+    <div class="border"></div>
+    <section class="workout" id="Тренировки">
+      <h2 class="title workout__title">Тренировки</h2>
+      <p class="subtitle workout__subtitle">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+        а&nbsp;записать эти
+        тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.</p>
+      <img src="./images/workout.jpg" alt="" class="workout-illustration">
+      <div class="workout__links">
+        <a href="https://www.strava.com" target="_blank" class="workout__link">Strava</a>
+        <a href="https://www.komoot.com" target="_blank" class="workout__link">Komoot</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h3 class="footer-text">Подпишитесь на рассылку —</h3>
+    <form class="form-email" action="">
+      <input class="footer-email" type="email" name="useremail" placeholder="Ваш e-mail">
+      <button class="button-email" type="submit">ok</button>
+    </form>
+    <p class="copyright">© Road Club 2021</p>
+    <div class="checkbox-theme checkbox-theme_footer">
+      <img src="./images/light.svg" alt="светлая" class="light-theme">
+      <label class="switch-footer">
+        <input class="input-footer" type="checkbox">
+        <span class="slider-footer"></span>
+      </label>
+      <img src="./images/dark.svg" alt="тёмная" class="dark-theme">
+    </div>
+    <div class="footer-icon"></div>
+  </footer>
   <script src="script.js"></script>
 </body>
 
