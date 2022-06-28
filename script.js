@@ -10,20 +10,27 @@ const subtitle = document.querySelectorAll('.subtitle');
 const footer = document.querySelector('.footer');
 const copyright = document.querySelector('.copyright');
 const footerEmail = document.querySelector('.footer-email');
+const formInput = document.querySelector('.form__input');
+const formButton = document.querySelector('.form__button');
+const formEmail = document.forms.email;
 const buttonEmail = document.querySelector('.button-email');
 const darkTheme = document.querySelectorAll('.dark-theme');
 const lightTheme = document.querySelectorAll('.light-theme');
-const inputFooter = document.querySelectorAll('.input-footer');
+const inputTheme = document.querySelectorAll('.input-theme');
 const menuBtnLinks = document.querySelector('.menu-btn__links');
 const menuBtnLink = document.querySelectorAll('.menu-btn__link');
+const check = document.querySelector('#check')
+const checkModal = document.querySelector('#check-modal')
 
 
+
+//открытие меню бургер
 menuBtn.addEventListener('click', function () {
   menuBtn.classList.toggle('active');
   menuBtnLinks.classList.toggle('active');
   page.classList.toggle('lock');
 })
-
+//ссылки меню бургер + закрытие
 menuBtnLink.forEach(button => {
   button.addEventListener('click', function () {
     menuBtn.classList.toggle('active');
@@ -32,8 +39,10 @@ menuBtnLink.forEach(button => {
   })
 });
 
-inputFooter.forEach(button => {
-  button.addEventListener('change', function () {
+
+//перереключение темы
+inputTheme.forEach(button => {
+  button.addEventListener('change', function (e) {
     page.classList.toggle('dark');
     header.classList.toggle('header__dark');
     menuBtn.classList.toggle('menu-btn__dark');
@@ -54,8 +63,36 @@ inputFooter.forEach(button => {
     });
     subtitle.forEach(subtitleDark => {
       subtitleDark.classList.toggle('subtitle__dark');
+      menuBtn.classList.remove('active');
+      menuBtnLinks.classList.remove('active');
+      page.classList.remove('lock');
     });
-
-
+    if (button.checked === true) {
+      checkModal.checked = true
+      check.checked = true
+    }
+    else
+      if (button.checked === false) {
+        checkModal.checked = false
+        check.checked = false
+      }
   })
+
+});
+//валидация
+formInput.addEventListener('input', function (evt) {
+  const isValid = formInput.checkValidity();
+  if (isValid) {
+    buttonEmail.style.display = '';
+    formButton.removeAttribute('disabled');
+    formButton.classList.remove('form__button_disabled');
+  } else {
+    formButton.setAttribute('disabled', true);
+    formButton.classList.add('form__button_disabled');
+    buttonEmail.style.display = 'none';
+  }
+});
+formEmail.addEventListener('click', function (evt) {
+  formEmail.reset();
+  evt.preventDefault();
 });

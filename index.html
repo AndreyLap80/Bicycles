@@ -28,9 +28,9 @@
     <li><a href="#Тренировки" class="menu-btn__link">Тренировки</a></li>
     <div class="checkbox-theme checkbox-theme_header">
       <span class="light-theme"></span>
-      <label class="switch-footer">
-        <input class="input-footer" type="checkbox">
-        <span class="slider-footer"></span>
+      <label class="switch-theme">
+        <input class="input-theme" id="check-modal" type="checkbox">
+        <span class="slider-theme"></span>
       </label>
       <span class="dark-theme"></span>
     </div>
@@ -125,16 +125,19 @@
   </main>
   <footer class="footer">
     <h3 class="footer-text">Подпишитесь на рассылку —</h3>
-    <form class="form-email" action="">
-      <input class="footer-email" type="email" name="useremail" placeholder="Ваш e-mail">
-      <button class="button-email" type="submit">ok</button>
+    <form class="form form-email" action="#" name="email">
+
+      <input class="footer-email form__input" id="email-input" type="email" name="useremail" placeholder="Ваш e-mail"
+        required>
+
+      <button class="form__button button-email" type="submit">ok</button>
     </form>
     <p class="copyright">© Road Club 2021</p>
     <div class="checkbox-theme checkbox-theme_footer">
       <span class="light-theme"></span>
-      <label class="switch-footer">
-        <input class="input-footer" type="checkbox">
-        <span class="slider-footer slider-footer__dark"></span>
+      <label class="switch-theme">
+        <input class="input-theme" id="check" type="checkbox">
+        <span class="slider-theme"></span>
       </label>
       <span class="dark-theme"></span>
     </div>
